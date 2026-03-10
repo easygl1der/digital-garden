@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://easygl1der.github.io/digital-garden">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://easygl1der.github.io/digital-garden/digital-garden-test">
     <title>Yueyh&#39;s Garden</title>
-    <link href="https://easygl1der.github.io/digital-garden/feed.xml" rel="self" >
-    <link href="https://easygl1der.github.io/digital-garden" >
-    <updated>2026-03-10T07:21:11Z</updated>
-    <id>https://easygl1der.github.io/digital-garden</id>
+    <link href="https://easygl1der.github.io/digital-garden/digital-garden-test/feed.xml" rel="self" >
+    <link href="https://easygl1der.github.io/digital-garden/digital-garden-test" >
+    <updated>2026-03-10T07:25:28Z</updated>
+    <id>https://easygl1der.github.io/digital-garden/digital-garden-test</id>
         <entry>
             <title>
                 Digital-Garden-Test
                 
             </title>
-            <updated>2026-03-10T07:21:03Z</updated>
-            <id>https://easygl1der.github.io/digital-garden/digital-garden-test/</id>
+            <updated>2026-03-10T07:25:17Z</updated>
+            <id>https://easygl1der.github.io/digital-garden/digital-garden-test/digital-garden-test/</id>
             <content type="html">
                 &lt;h1 id=&quot;欢迎来到我的数字花园&quot; tabindex=&quot;-1&quot;&gt;欢迎来到我的数字花园&lt;/h1&gt;
 &lt;p&gt;这是通过 Claude Code + Obsidian Digital Garden 发布的测试笔记！&lt;/p&gt;
@@ -33,6 +33,6 @@
 &lt;p&gt;&lt;em&gt;这篇文章由 AI 辅助生成&lt;/em&gt;&lt;/p&gt;
 
             </content>
-            <link href="https://easygl1der.github.io/digital-garden/digital-garden-test/" >
+            <link href="https://easygl1der.github.io/digital-garden/digital-garden-test/digital-garden-test/" >
         </entry>
 </feed>
