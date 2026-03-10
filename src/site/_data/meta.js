@@ -9,11 +9,14 @@ module.exports = async (data) => {
 
   // Calculate base path for relative URLs
   let basePath = "";
+  let assetPath = "";
   if (baseUrl) {
     const urlParts = baseUrl.replace("https://", "").split("/");
     // Remove the domain part, keep only the path
     if (urlParts.length > 1) {
       basePath = "/" + urlParts.slice(1).join("/") + "/";
+      // For assets, we need to go up one level from the note path
+      assetPath = basePath.replace(/\/[^/]+\/$/, "/");
     }
   }
   let themeStyle = globSync("src/site/styles/_theme.*.css")[0] || "";
@@ -80,6 +83,7 @@ module.exports = async (data) => {
     mainLanguage: process.env.SITE_MAIN_LANGUAGE || "en",
     siteBaseUrl: baseUrl,
     basePath: basePath,
+    assetPath: assetPath,
     styleSettingsCss,
     buildDate: new Date(),
   };

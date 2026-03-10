@@ -2,19 +2,20 @@
 permalink: 404.html
 ---
 {%- set basePath = meta.basePath -%}
+{%- set assetPath = meta.assetPath -%}
 <!DOCTYPE html>
 <html lang="{{ meta.mainLanguage }}">
     <head>
         <title>Nothing here</title>
-        <link href="{{ basePath }}styles/digital-garden-base.css" rel="stylesheet">
+        <link href="{{ assetPath }}styles/digital-garden-base.css" rel="stylesheet">
         {%-if meta.themeStyle%}
-            <link href="{{ basePath }}styles/obsidian-base.css" rel="stylesheet">
-    	    <link href="{{ basePath }}{{meta.themeStyle}}" rel="stylesheet">
+            <link href="{{ assetPath }}styles/obsidian-base.css" rel="stylesheet">
+    	    <link href="{{ assetPath }}{{meta.themeStyle}}" rel="stylesheet">
         {% else %}
-            <link href="{{ basePath }}styles/style.css" rel="stylesheet">
+            <link href="{{ assetPath }}styles/style.css" rel="stylesheet">
         {%endif%}
 
-        <link href="{{ basePath }}styles/custom-style.css" rel="stylesheet">
+        <link href="{{ assetPath }}styles/custom-style.css" rel="stylesheet">
 
     </head>
     <body class="theme-{{meta.baseTheme}} markdown-preview-view">

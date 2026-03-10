@@ -16,15 +16,16 @@
 <script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script>
 
 {%- set basePath = meta.basePath -%}
-<link href="{{ basePath }}styles/digital-garden-base.css" rel="stylesheet">
+{%- set assetPath = meta.assetPath -%}
+<link href="{{ assetPath }}styles/digital-garden-base.css" rel="stylesheet">
 {%-if meta.themeStyle%}
-    <link href="{{ basePath }}styles/obsidian-base.css" rel="stylesheet">
-    <link href="{{ basePath }}{{meta.themeStyle}}" rel="stylesheet">
+    <link href="{{ assetPath }}styles/obsidian-base.css" rel="stylesheet">
+    <link href="{{ assetPath }}{{meta.themeStyle}}" rel="stylesheet">
 {% else %}
-    <link href="{{ basePath }}styles/style.css" rel="stylesheet">
+    <link href="{{ assetPath }}styles/style.css" rel="stylesheet">
 {%endif%}
 
-<link href="{{ basePath }}styles/custom-style.css" rel="stylesheet">
+<link href="{{ assetPath }}styles/custom-style.css" rel="stylesheet">
 {%- for style in dynamics.styles -%}
 <link href="{{style}}" rel="stylesheet">
 {%- endfor -%}
