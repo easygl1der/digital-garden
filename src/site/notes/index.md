@@ -1,6 +1,7 @@
 ---
 dg-publish: true
 dg-home: true
+tags: gardenEntry
 title: 欢迎来到 Yueyh's Digital Garden
 ---
 
