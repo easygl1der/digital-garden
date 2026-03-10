@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:base="https://easygl1der.github.io/digital-garden">
+    <title>Yueyh&#39;s Garden</title>
+    <link href="https://easygl1der.github.io/digital-garden/feed.xml" rel="self" >
+    <link href="https://easygl1der.github.io/digital-garden" >
+    <updated>2026-03-10T07:21:11Z</updated>
+    <id>https://easygl1der.github.io/digital-garden</id>
+        <entry>
+            <title>
+                Digital-Garden-Test
+                
+            </title>
+            <updated>2026-03-10T07:21:03Z</updated>
+            <id>https://easygl1der.github.io/digital-garden/digital-garden-test/</id>
+            <content type="html">
+                &lt;h1 id=&quot;欢迎来到我的数字花园&quot; tabindex=&quot;-1&quot;&gt;欢迎来到我的数字花园&lt;/h1&gt;
+&lt;p&gt;这是通过 Claude Code + Obsidian Digital Garden 发布的测试笔记！&lt;/p&gt;
+&lt;h2 id=&quot;功能测试&quot; tabindex=&quot;-1&quot;&gt;功能测试&lt;/h2&gt;
+&lt;ul class=&quot;task-list&quot;&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_0&quot; checked=&quot;true&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_0&quot;&gt; Markdown 渲染&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_1&quot; checked=&quot;true&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_1&quot;&gt; 代码高亮&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_2&quot; checked=&quot;true&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_2&quot;&gt; 双向链接&lt;/label&gt;&lt;/li&gt;
+&lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; id=&quot;cbx_3&quot; disabled=&quot;true&quot; /&gt;&lt;label for=&quot;cbx_3&quot;&gt; 图片测试&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;链接测试&quot; tabindex=&quot;-1&quot;&gt;链接测试&lt;/h2&gt;
+&lt;p&gt;这是一篇测试笔记，用于验证 Digital Garden 发布流程是否正常工作。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;quot;代码是最好的文档&amp;quot;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code class=&quot;language-javascript&quot;&gt;console.log(&amp;quot;Hello, Digital Garden!&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;em&gt;这篇文章由 AI 辅助生成&lt;/em&gt;&lt;/p&gt;
+
+            </content>
+            <link href="https://easygl1der.github.io/digital-garden/digital-garden-test/" >
+        </entry>
+</feed>
