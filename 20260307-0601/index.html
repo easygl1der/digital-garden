@@ -1,0 +1,870 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<title>20260307_0601_热点新闻全平台推送总结</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<script async type="module">import mermaid from"https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs"</script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" integrity="sha512-hpZ5pDCF2bRCweL5WoA0/N1elet1KYL5mx3LP555Eg/0ZguaHawxNvEjF6O3rufAChs16HVNhEc6blF/rZoowQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/autoloader/prism-autoloader.min.js" integrity="sha512-sv0slik/5O0JIPdLBCR2A3XDg/1U3WuDEheZfI/DI5n8Yqc3h5kjrnr46FGBNiUAJF7rE4LHKwQ/SoSLRKAxEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script async src="https://cdn.jsdelivr.net/npm/lucide@0.115.0/dist/umd/lucide.min.js"></script>
+<script>window.addEventListener("load",(()=>{document.querySelectorAll(".callout").forEach((e=>{const t=getComputedStyle(e).getPropertyValue("--callout-icon"),l=t&&t.trim().replace(/^lucide-/,"");if(l){const t=e.querySelector(".callout-title");if(t){const e=document.createElement("div"),c=document.createElement("i");e.appendChild(c),c.setAttribute("icon-name",l),e.setAttribute("class","callout-icon"),t.insertBefore(e,t.firstChild)}}})),lucide.createIcons(),Array.from(document.querySelectorAll(".callout.is-collapsible")).forEach((e=>{e.querySelector(".callout-title").addEventListener("click",(t=>{e.classList.contains("is-collapsed")?e.classList.remove("is-collapsed"):e.classList.add("is-collapsed")}))}))}))</script>
+<script async src="https://fastly.jsdelivr.net/npm/force-graph@1.43.0/dist/force-graph.min.js"></script>
+<script async src="https://fastly.jsdelivr.net/npm/@alpinejs/persist@3.11.1/dist/cdn.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/alpinejs@3.11.1/dist/cdn.min.js" async></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism-okaidia.min.css" integrity="sha512-mIs9kKbaw6JZFfSuo+MovjU+Ntggfoj8RwAmJbVXQ5mkAX5LlgETQEweFPI18humSPHymTb5iikEOKWF7I8ncQ==" crossorigin="anonymous" referrerpolicy="no-referrer" async>
+<script src="https://fastly.jsdelivr.net/npm/whatwg-fetch@3.6.2/dist/fetch.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" async></script><link href="/digital-garden/styles/digital-garden-base.css" rel="stylesheet">
+<link href="/digital-garden/styles/obsidian-base.css" rel="stylesheet">
+<link href="/digital-garden//styles/_theme.5afe6072.css" rel="stylesheet">
+<link href="/digital-garden/styles/custom-style.css" rel="stylesheet">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.webmanifest">
+<style></style>
+</head>
+<body class="theme-light markdown-preview-view markdown-rendered markdown-preview-section">
+<nav class="navbar">
+<div class="navbar-inner">
+<a href="/digital-garden/digital-garden-test/" style="text-decoration:none">
+<h1 style="margin:15px!important">Yueyh&#39;s Garden</h1>
+</a>
+</div>
+</nav>
+<main class="content cm-s-obsidian">
+<header>
+<div class="header-meta">
+</div>
+</header>
+<h1 id="全平台热点新闻推送" tabindex="-1">全平台热点新闻推送</h1>
+<blockquote>
+<p>推送时间：2026年3月7日 06:01 (Asia/Shanghai)</p>
+</blockquote>
+<hr>
+<h2 id="📊 数据概览" tabindex="-1">📊 数据概览</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>平台</th>
+<th>数量</th>
+<th>状态</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub Trending</td>
+<td>11/20</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>百度热搜</td>
+<td>50/20</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>小红书首页推荐</td>
+<td>35/50</td>
+<td>⚠️</td>
+</tr>
+<tr>
+<td>B站首页推荐</td>
+<td>~20</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>B站热门排行榜</td>
+<td>-</td>
+<td>⚠️ 页面加载失败</td>
+</tr>
+<tr>
+<td>微博热搜</td>
+<td>-</td>
+<td>❌ 需要登录</td>
+</tr>
+<tr>
+<td>知乎热榜</td>
+<td>-</td>
+<td>❌ 需要登录</td>
+</tr>
+<tr>
+<td>X (Twitter) 热搜</td>
+<td>-</td>
+<td>❌ 页面加载失败/需要登录</td>
+</tr>
+</tbody>
+</table></div>
+<hr>
+<h2 id="git-hub-trending-11" tabindex="-1">🔥 GitHub Trending (11条)</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>序号</th>
+<th>项目</th>
+<th>描述</th>
+<th>星级</th>
+<th>今日新增</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>moeru-ai/airi</td>
+<td>💖🧸 Self hosted, you-owned Grok Companion</td>
+<td>29,435 ⭐</td>
+<td>2,544</td>
+</tr>
+<tr>
+<td>2</td>
+<td>QwenLM/Qwen-Agent</td>
+<td>Agent framework based on Qwen&gt;=3.0</td>
+<td>14,578 ⭐</td>
+<td>684</td>
+</tr>
+<tr>
+<td>3</td>
+<td>microsoft/hve-core</td>
+<td>Hypervelocity Engineering components</td>
+<td>534 ⭐</td>
+<td>275</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Ed1s0nZ/CyberStrikeAI</td>
+<td>AI-native security testing platform</td>
+<td>1,582 ⭐</td>
+<td>138</td>
+</tr>
+<tr>
+<td>5</td>
+<td>inclusionAI/AReaL</td>
+<td>Lightning-Fast RL for LLM Reasoning</td>
+<td>4,377 ⭐</td>
+<td>348</td>
+</tr>
+<tr>
+<td>6</td>
+<td>lingfengQAQ/webnovel-writer</td>
+<td>网文辅助创作系统</td>
+<td>756 ⭐</td>
+<td>84</td>
+</tr>
+<tr>
+<td>7</td>
+<td>openai/skills</td>
+<td>Skills Catalog for Codex</td>
+<td>11,871 ⭐</td>
+<td>582</td>
+</tr>
+<tr>
+<td>8</td>
+<td>TheCraigHewitt/seomachine</td>
+<td>SEO-optimized blog content</td>
+<td>2,100 ⭐</td>
+<td>675</td>
+</tr>
+<tr>
+<td>9</td>
+<td>virattt/ai-hedge-fund</td>
+<td>An AI Hedge Fund Team</td>
+<td>46,313 ⭐</td>
+<td>82</td>
+</tr>
+<tr>
+<td>10</td>
+<td>aidenybai/react-grab</td>
+<td>Select context for coding agents</td>
+<td>5,964 ⭐</td>
+<td>442</td>
+</tr>
+<tr>
+<td>11</td>
+<td>msitarzewski/agency-agents</td>
+<td>AI agency at your fingertips</td>
+<td>9,717 ⭐</td>
+<td>2,857</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>GitHub链接: <a href="https://github.com/trending" target="_blank" class="external-link">https://github.com/trending</a></p>
+</blockquote>
+<hr>
+<h2 id="top-50" tabindex="-1">🔥 百度热搜 TOP 50</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>序号</th>
+<th>标题</th>
+<th>热度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>总书记向女同胞致以节日祝福</td>
+<td>7,904,800</td>
+</tr>
+<tr>
+<td>2</td>
+<td>多地官宣中小学春假</td>
+<td>7,808,456</td>
+</tr>
+<tr>
+<td>3</td>
+<td>代表：70岁以上老人真干不动农活了</td>
+<td>7,713,121</td>
+</tr>
+<tr>
+<td>4</td>
+<td>政府工作报告提到的资金关系你我</td>
+<td>7,618,311</td>
+</tr>
+<tr>
+<td>5</td>
+<td>妈妈带女儿在大屏前跳舞火爆全网</td>
+<td>7,522,224</td>
+</tr>
+<tr>
+<td>6</td>
+<td>委员：去机场比坐飞机时间还长</td>
+<td>7,428,739</td>
+</tr>
+<tr>
+<td>7</td>
+<td>初高中学生人数将排浪式达峰</td>
+<td>7,333,251</td>
+</tr>
+<tr>
+<td>8</td>
+<td>破5亿播放AI短剧成本仅3000</td>
+<td>7,237,687</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Lululemon千元新鞋被指像老奶奶布鞋</td>
+<td>7,141,791</td>
+</tr>
+<tr>
+<td>10</td>
+<td>这一波民生好消息请查收</td>
+<td>7,044,927</td>
+</tr>
+<tr>
+<td>11</td>
+<td>草莓价格跳水 批发价低至1-2元/斤</td>
+<td>6,953,270</td>
+</tr>
+<tr>
+<td>12</td>
+<td>安徽霍山现储量600公斤金矿系谣言</td>
+<td>6,851,840</td>
+</tr>
+<tr>
+<td>13</td>
+<td>伊朗大规模发射先进导弹</td>
+<td>6,664,837</td>
+</tr>
+<tr>
+<td>14</td>
+<td>伊朗总统：一些国家已开始调解冲突</td>
+<td>6,564,837</td>
+</tr>
+<tr>
+<td>15</td>
+<td>伊朗称摧毁中东三国的美军雷达</td>
+<td>5,670,110</td>
+</tr>
+<tr>
+<td>16</td>
+<td>长城汽车魏建军就抄袭路虎海报道歉</td>
+<td>6,370,011</td>
+</tr>
+<tr>
+<td>17</td>
+<td>花呗等网络消费信贷可享受贴息</td>
+<td>6,371,899</td>
+</tr>
+<tr>
+<td>18</td>
+<td>清华毕业生都去哪了？最新数据公布</td>
+<td>6,276,218</td>
+</tr>
+<tr>
+<td>19</td>
+<td>网友在老家发现十几张百年前地契</td>
+<td>6,183,811</td>
+</tr>
+<tr>
+<td>20</td>
+<td>下周油价或将迎年内最大涨幅</td>
+<td>6,095,014</td>
+</tr>
+<tr>
+<td>21</td>
+<td>建议不对70岁以上老人开自动续费</td>
+<td>5,992,428</td>
+</tr>
+<tr>
+<td>22</td>
+<td>女子长期熬夜压力大患3种癌症</td>
+<td>5,891,350</td>
+</tr>
+<tr>
+<td>23</td>
+<td>代表建议南天门计划升级国家级IP</td>
+<td>5,800,317</td>
+</tr>
+<tr>
+<td>24</td>
+<td>司机被查 拿出&quot;驾驶证&quot;逗乐交警</td>
+<td>5,704,441</td>
+</tr>
+<tr>
+<td>25</td>
+<td>本想全国唯一却因太生僻而改名</td>
+<td>5,604,038</td>
+</tr>
+<tr>
+<td>26</td>
+<td>烧坏几十台宇树机器人换来&quot;全能王&quot;</td>
+<td>5,525,427</td>
+</tr>
+<tr>
+<td>27</td>
+<td>退伍士兵乘机返乡 飞机绕岛盘旋两周</td>
+<td>5,410,356</td>
+</tr>
+<tr>
+<td>28</td>
+<td>《武林外传》演员曾捡食垃圾桶剩饭</td>
+<td>5,329,788</td>
+</tr>
+<tr>
+<td>29</td>
+<td>男子遭猴子围攻抢食 羽绒服被抓破</td>
+<td>5,219,778</td>
+</tr>
+<tr>
+<td>30</td>
+<td>建议完善危重症患者&quot;同情用药&quot;制度</td>
+<td>5,138,969</td>
+</tr>
+<tr>
+<td>31</td>
+<td>《韩国日报》记者：山东人特别热情好客</td>
+<td>5,031,627</td>
+</tr>
+<tr>
+<td>32</td>
+<td>代表建议增设班级行政助理岗位</td>
+<td>4,937,119</td>
+</tr>
+<tr>
+<td>33</td>
+<td>广东发布开春最强&quot;求贤令&quot;</td>
+<td>4,854,005</td>
+</tr>
+<tr>
+<td>34</td>
+<td>委员建议国家为年轻人养育孩子兜底</td>
+<td>4,746,607</td>
+</tr>
+<tr>
+<td>35</td>
+<td>代表建议探索每周四天半工作制</td>
+<td>4,642,614</td>
+</tr>
+<tr>
+<td>36</td>
+<td>委员建议：少加班多放假</td>
+<td>4,559,339</td>
+</tr>
+<tr>
+<td>37</td>
+<td>祖父母去世请不了丧假 代表建议修改</td>
+<td>4,470,635</td>
+</tr>
+<tr>
+<td>38</td>
+<td>雷军：小米机器人在拧螺丝了</td>
+<td>4,364,964</td>
+</tr>
+<tr>
+<td>39</td>
+<td>猫尾巴被扫地机器人卷入 拖行10分钟</td>
+<td>4,277,808</td>
+</tr>
+<tr>
+<td>40</td>
+<td>伊朗一儿童游乐场遭袭</td>
+<td>4,179,297</td>
+</tr>
+<tr>
+<td>41</td>
+<td>霍启刚：希望在中小学推广冰雪课程</td>
+<td>4,068,109</td>
+</tr>
+<tr>
+<td>42</td>
+<td>尹同跃称奇瑞不参与低水平价格战</td>
+<td>4,005,738</td>
+</tr>
+<tr>
+<td>43</td>
+<td>女子花8万做医美后右脸面瘫</td>
+<td>3,876,355</td>
+</tr>
+<tr>
+<td>44</td>
+<td>胎儿变懒竟因脐带扭转30圈 医生提醒</td>
+<td>3,790,951</td>
+</tr>
+<tr>
+<td>45</td>
+<td>中国女足3比0击败乌兹别克斯坦</td>
+<td>3,718,056</td>
+</tr>
+<tr>
+<td>46</td>
+<td>广东省委书记力荐潮汕美食</td>
+<td>3,608,907</td>
+</tr>
+<tr>
+<td>47</td>
+<td>白岩松建议对未成年人禁止有害饮料</td>
+<td>3,528,339</td>
+</tr>
+<tr>
+<td>48</td>
+<td>五位&quot;一把手&quot;集中发声</td>
+<td>3,419,879</td>
+</tr>
+<tr>
+<td>49</td>
+<td>省委书记：广东的干部要累一点</td>
+<td>3,293,740</td>
+</tr>
+<tr>
+<td>50</td>
+<td>《逐玉》开播</td>
+<td>3,202,509</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>百度热搜链接: <a href="https://top.baidu.com/board?tab=realtime" target="_blank" class="external-link">https://top.baidu.com/board?tab=realtime</a></p>
+</blockquote>
+<hr>
+<h2 id="top-35" tabindex="-1">🔥 小红书首页推荐 TOP 35</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>序号</th>
+<th>标题</th>
+<th>作者</th>
+<th>点赞</th>
+<th>类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>不上班、排长队装OpenClaw的都是什么人</td>
+<td>找答案的李答案</td>
+<td>222</td>
+<td>视频</td>
+</tr>
+<tr>
+<td>2</td>
+<td>陪&quot;男博士&quot;成长的代价</td>
+<td>这个momo可以顺利毕业</td>
+<td>2,737</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>3</td>
+<td>时隔15年，老爸给17岁女儿安利《魔法少女小</td>
+<td>修恩</td>
+<td>3,404</td>
+<td>视频</td>
+</tr>
+<tr>
+<td>4</td>
+<td>AI会断了数学系的后路嘛🥹</td>
+<td>Unknowingly</td>
+<td>162</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>5</td>
+<td>鹅厂open claw的安装排队人数惊人</td>
+<td>在路上的kairo</td>
+<td>276</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>6</td>
+<td>压力爆炸的时候，我去找OpenClaw聊了聊</td>
+<td>朝阳托雷斯</td>
+<td>12</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>7</td>
+<td>OpenClaw 让我躺着上班</td>
+<td>追风少年</td>
+<td>4</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>8</td>
+<td>GPT-5.4更新总结</td>
+<td>机器坏人（AI版）</td>
+<td>763</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>9</td>
+<td>约会甜妹的三大秘籍，看完包会。</td>
+<td>张小灰（变帅版）</td>
+<td>72</td>
+<td>视频</td>
+</tr>
+<tr>
+<td>10</td>
+<td>用Mac Studio 512G 本地Ai 模型跑openclaw</td>
+<td>Magic A</td>
+<td>158</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>11</td>
+<td>偷我？这么强？</td>
+<td>duKonsn</td>
+<td>327</td>
+<td>视频</td>
+</tr>
+<tr>
+<td>12</td>
+<td>一个几乎&quot;没后端&quot;的论文网站，是怎么跑的</td>
+<td>积木天的云朵</td>
+<td>67</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>13</td>
+<td>不敢发在别的地方…</td>
+<td>Jerry👹</td>
+<td>327</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>14</td>
+<td>GPT-5.4龙虾味太浓！</td>
+<td>机器之心</td>
+<td>124</td>
+<td>视频</td>
+</tr>
+<tr>
+<td>15</td>
+<td>一群龙虾在干活OpenClaw</td>
+<td>AI泽哥一人公司</td>
+<td>318</td>
+<td>视频</td>
+</tr>
+<tr>
+<td>16</td>
+<td>本来我成都球迷都觉得红牌过了，直到这张图</td>
+<td>成都彭于晏</td>
+<td>820</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>17</td>
+<td>爹味冲击（2）</td>
+<td>乌拉拉拉黑暗之神</td>
+<td>2,070</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>18</td>
+<td>当我腾讯的老公今天安装了openclaw</td>
+<td>🌻加薪🌻</td>
+<td>39</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>19</td>
+<td>还是腾讯会玩 都给OpenClaw发上出生证明了?</td>
+<td>罗罗 Edward</td>
+<td>115</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>20</td>
+<td>openclaw 养龙虾怕断电？帮你解决</td>
+<td>泽泽爱折腾</td>
+<td>97</td>
+<td>视频</td>
+</tr>
+<tr>
+<td>21</td>
+<td>GPT5.4真的有说的那么好用吗？</td>
+<td>金黄说AI</td>
+<td>380</td>
+<td>视频</td>
+</tr>
+<tr>
+<td>22</td>
+<td>博士找高校到现在，中山大学是最那啥的</td>
+<td>Constantine的外语日常</td>
+<td>202</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>23</td>
+<td>为什么说，龙虾最强模型，GPT5.4来啦</td>
+<td>戴眼镜的小胖</td>
+<td>107</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>24</td>
+<td>蔡司镜片避雷！有哪些不值得买！</td>
+<td>阿恺说镜视光工作室</td>
+<td>12</td>
+<td>视频</td>
+</tr>
+<tr>
+<td>25</td>
+<td>怎么从爱好拉近关系，来跟你细聊</td>
+<td>Leinx</td>
+<td>2,500</td>
+<td>视频</td>
+</tr>
+<tr>
+<td>26</td>
+<td>深圳腾讯安装龙虾现场爆火</td>
+<td>大熊思考</td>
+<td>57</td>
+<td>视频</td>
+</tr>
+<tr>
+<td>27</td>
+<td>深圳腾讯openclaw一代人有一代人的鸡蛋要领</td>
+<td>今天也是吊吊哒</td>
+<td>102</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>28</td>
+<td>英伟达停止资助Anthropic</td>
+<td>小C聊AI</td>
+<td>339</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>29</td>
+<td>🦞其实并不会真正的成长</td>
+<td>你怎么还不会用大模型！</td>
+<td>121</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>30</td>
+<td>Claude三小时写出我这辈子写过最好的网站</td>
+<td>硅谷小喽啰</td>
+<td>1,689</td>
+<td>视频</td>
+</tr>
+<tr>
+<td>31</td>
+<td>听GLM创始人讲GLM的课</td>
+<td>阿离</td>
+<td>305</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>32</td>
+<td>🦞openclaw深圳线下活动</td>
+<td>Jv</td>
+<td>3</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>33</td>
+<td>伊朗发射超重型导弹为遇难学生复仇</td>
+<td>新京报</td>
+<td>6,933</td>
+<td>视频</td>
+</tr>
+<tr>
+<td>34</td>
+<td>凌晨一点的我越看SHIT越上瘾但也越焦虑</td>
+<td>吉一力</td>
+<td>501</td>
+<td>图文</td>
+</tr>
+<tr>
+<td>35</td>
+<td>欢迎收看博士后花3h 上中大的开学vlog</td>
+<td>山照野</td>
+<td>191</td>
+<td>视频</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>小红书链接示例: <a href="https://www.xiaohongshu.com/explore/69aa7d38000000001a02c81f?xsec_token=ABOSv91oJ-VQw8LRSgMcT_ZwIYCNzjGNTR-RKTdK0DhzA=&amp;xsec_source=" target="_blank" class="external-link">https://www.xiaohongshu.com/explore/69aa7d38000000001a02c81f?xsec_token=ABOSv91oJ-VQw8LRSgMcT_ZwIYCNzjGNTR-RKTdK0DhzA=&amp;xsec_source=</a></p>
+</blockquote>
+<hr>
+<h2 id="b" tabindex="-1">🔥 B站首页推荐</h2>
+<div class="table-wrapper"><table>
+<thead>
+<tr>
+<th>序号</th>
+<th>标题</th>
+<th>作者</th>
+<th>播放量/热度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>特朗普刺杀哈梅内伊，伊朗要变天了吗？世界会怎么变？</td>
+<td>小王Albert</td>
+<td>882.3万</td>
+</tr>
+<tr>
+<td>2</td>
+<td>100克的纯金手机壳？影视飓风怪东西分享8.0</td>
+<td>影视飓风</td>
+<td>101.8万</td>
+</tr>
+<tr>
+<td>3</td>
+<td>那晚之后，全是转折</td>
+<td>毒舌电影编辑部</td>
+<td>700.0万</td>
+</tr>
+<tr>
+<td>4</td>
+<td>【苏星河】软件界的富二代，阿里千问有多狠？</td>
+<td>苏星河牛通</td>
+<td>171.3万</td>
+</tr>
+<tr>
+<td>5</td>
+<td>美国、以色列狂暴攻势之下 伊朗还能撑多久？【牧杂谈】</td>
+<td>小牧phenix</td>
+<td>29.5万</td>
+</tr>
+<tr>
+<td>6</td>
+<td>你祖上是贵族还是平民？看姓氏就知道了</td>
+<td>赛雷三分钟</td>
+<td>40.0万</td>
+</tr>
+<tr>
+<td>7</td>
+<td>OpenClaw安装+3大超实用玩法，炒股，搞情报，盘收藏夹...</td>
+<td>Xuan_酱</td>
+<td>14.2万</td>
+</tr>
+<tr>
+<td>8</td>
+<td>引发众怒的三角洲毁号事件！后续这么离谱？</td>
+<td>张子zi</td>
+<td>31.2万</td>
+</tr>
+<tr>
+<td>9</td>
+<td>粪作一出！才知道这部作品有多么优秀！</td>
+<td>懒人核心</td>
+<td>73.6万</td>
+</tr>
+<tr>
+<td>10</td>
+<td>万物皆可爱！</td>
+<td>单依纯</td>
+<td>424.7万</td>
+</tr>
+<tr>
+<td>11</td>
+<td>百大晚宴！准备了整整一年！到底什么样？都吃些什么？</td>
+<td>HOLA小测佬</td>
+<td>302.8万</td>
+</tr>
+<tr>
+<td>12</td>
+<td>12年前火爆全网的神作</td>
+<td>昨夜梦中</td>
+<td>36.0万</td>
+</tr>
+<tr>
+<td>13</td>
+<td>&quot;佩奇，你的刀钝了&quot;</td>
+<td>洛温阿特金森</td>
+<td>163.8万</td>
+</tr>
+<tr>
+<td>14</td>
+<td>OpenClaw小龙虾保姆级安装教程！</td>
+<td>林粒粒呀</td>
+<td>5.5万</td>
+</tr>
+<tr>
+<td>15</td>
+<td>高中时同学打球很脏</td>
+<td>布丁的猫meme</td>
+<td>58.0万</td>
+</tr>
+<tr>
+<td>16</td>
+<td>全网最细！小米超跑实拍详解！！！小米VGT</td>
+<td>Upspeed盛嘉成</td>
+<td>270.8万</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>B站首页链接: <a href="https://www.bilibili.com/" target="_blank" class="external-link">https://www.bilibili.com/</a></p>
+</blockquote>
+<hr>
+<h2 id="⚠️ 未获取成功的平台" tabindex="-1">⚠️ 未获取成功的平台</h2>
+<h3 id="微博热搜" tabindex="-1">微博热搜</h3>
+<ul>
+<li>状态：需要登录</li>
+<li>链接：<a href="https://s.weibo.com/top/summary/" target="_blank" class="external-link">https://s.weibo.com/top/summary/</a></li>
+</ul>
+<h3 id="知乎热榜" tabindex="-1">知乎热榜</h3>
+<ul>
+<li>状态：需要登录</li>
+<li>链接：<a href="https://www.zhihu.com/billboard" target="_blank" class="external-link">https://www.zhihu.com/billboard</a></li>
+</ul>
+<h3 id="x-twitter" tabindex="-1">X (Twitter) 热搜</h3>
+<ul>
+<li>状态：页面加载失败/需要登录</li>
+<li>链接：<a href="https://x.com/explore/tabs/news" target="_blank" class="external-link">https://x.com/explore/tabs/news</a></li>
+</ul>
+<h3 id="b-1" tabindex="-1">B站热门排行榜</h3>
+<ul>
+<li>状态：页面加载失败</li>
+<li>链接：<a href="https://www.bilibili.com/v/popular/rank/all" target="_blank" class="external-link">https://www.bilibili.com/v/popular/rank/all</a></li>
+</ul>
+<hr>
+<h2 id="📝 备注" tabindex="-1">📝 备注</h2>
+<ol>
+<li><strong>数据获取时间</strong>：2026年3月7日 06:01 (Asia/Shanghai)</li>
+<li><strong>小红书</strong>：获取到35条内容，未达到50条目标（MCP返回限制）</li>
+<li><strong>微博/知乎/X</strong>：需要登录账号才能访问</li>
+<li><strong>B站热门排行榜</strong>：页面加载失败，可能是反爬虫机制</li>
+</ol>
+<hr>
+<p><em>本报告由 OpenClaw 自动生成</em></p>
+</main>
+<script>window.location.hash&&document.getElementById(window.location.hash.slice(1)).classList.add("referred"),window.addEventListener("hashchange",(e=>{const t=e.oldURL.split("#");t[1]&&document.getElementById(t[1]).classList.remove("referred");const n=e.newURL.split("#");n[1]&&document.getElementById(n[1]).classList.add("referred")}),!1);const url_parts=window.location.href.split("#"),url=url_parts[0],referrence=url_parts[1];document.querySelectorAll(".cm-s-obsidian > *[id]").forEach((function(e){e.ondblclick=function(e){const t=url+"#"+e.target.id;navigator.clipboard.writeText(t)}}))</script>
+<script src="https://fastly.jsdelivr.net/npm/luxon@3.2.1/build/global/luxon.min.js"></script>
+<script defer="defer">TIMESTAMP_FORMAT="MMM dd, yyyy h:mm a",document.querySelectorAll(".human-date").forEach((function(e){date=e.getAttribute("data-date")||e.innerText,parsed_date=luxon.DateTime.fromISO(date),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromSQL(date)),null!=parsed_date.invalid&&(parsed_date=luxon.DateTime.fromHTML(date)),e.innerHTML=parsed_date.toFormat(TIMESTAMP_FORMAT)}))</script>
+<script>lucide.createIcons({attrs:{class:["svg-icon"]}})</script>
+</body>
+</html>
