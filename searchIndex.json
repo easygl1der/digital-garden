@@ -1,1 +1,9 @@
-[]
+[
+{
+		"title": "Digital Garden 测试笔记",
+		"date":"Tue Mar 10 2026 06:18:15 GMT+0000 (Coordinated Universal Time)",
+		"url":"/digital-garden-test/",
+		"content": "欢迎来到我的数字花园\n这是通过 Claude Code + Obsidian Digital Garden 发布的测试笔记！\n功能测试\n\nMarkdown 渲染\n代码高亮\n双向链接\n图片测试\n\n链接测试\n这是一篇测试笔记，用于验证 Digital Garden 发布流程是否正常工作。\n\n&quot;代码是最好的文档&quot;\n\nconsole.log(&quot;Hello, Digital Garden!&quot;);\n\n这篇文章由 AI 辅助生成",
+		"tags": [ "note","测试","digital-garden"]
+}
+]
