@@ -6,6 +6,16 @@ module.exports = async (data) => {
   if (baseUrl && !baseUrl.startsWith("http")) {
     baseUrl = "https://" + baseUrl;
   }
+
+  // Calculate base path for relative URLs
+  let basePath = "";
+  if (baseUrl) {
+    const urlParts = baseUrl.replace("https://", "").split("/");
+    // Remove the domain part, keep only the path
+    if (urlParts.length > 1) {
+      basePath = "/" + urlParts.slice(1).join("/") + "/";
+    }
+  }
   let themeStyle = globSync("src/site/styles/_theme.*.css")[0] || "";
   if (themeStyle) {
     themeStyle = themeStyle.split("site")[1];
@@ -69,6 +79,7 @@ module.exports = async (data) => {
     siteName: process.env.SITE_NAME_HEADER || "Digital Garden",
     mainLanguage: process.env.SITE_MAIN_LANGUAGE || "en",
     siteBaseUrl: baseUrl,
+    basePath: basePath,
     styleSettingsCss,
     buildDate: new Date(),
   };
